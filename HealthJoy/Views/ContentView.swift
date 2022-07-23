@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+
+        NavigationView {
+            Text("iOS 13 SUCCESS")
+                .padding()
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
