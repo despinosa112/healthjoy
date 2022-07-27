@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct HealthJoyApp: App {
+
+    @StateObject private var gifData = GifData()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(gifData)
         }
     }
 }

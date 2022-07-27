@@ -10,30 +10,29 @@ import SwiftUI
 struct ListView: View {
     
     @State private var searchText = ""
-    
-    @State private var gifs: [Gif] = [Gif]()
-    
-    var apiKey: String
-
-
-    
+    @EnvironmentObject var gifData: GifData
+            
     var body: some View {
         VStack {
             if #available(iOS 15.0, *) {
-                if (searchText == "") {
-                    Text("Please Search For A Gif")
+                if (gifData.gifs.count < 1) {
+                    Text("No Gifs to display")
                 }
-                List (gifs){ gif in
-                    GifContainerView(gif: gif)
+                List(){
+                    ForEach(gifData.gifs) { gif in
+                        GifContainerView(gif: gif)
+                    }
+                    if (gifData.listFull == false && searchText != "") {
+                        ActivityIndicatorView()
+                            .onAppear {
+                                gifData.searchGifs(query: searchText)
+                            }
+                    }
                 }
-                .background(Color.green)
                 .listStyle(.inset)
                 .searchable(text: $searchText, prompt: "Enter Search Phrase")
                 .onChange(of: searchText) { newValue in
-                    GiphyHelper.search(query: searchText, apiKey: apiKey) { gifs in
-                        self.gifs = gifs
-                    }
-                    
+                    gifData.searchGifs(query: searchText)
                 }
                 
             } else {
@@ -41,13 +40,11 @@ struct ListView: View {
             }
         }
         .navigationTitle("Search")
-        .background(Color.yellow)
-
     }
 }
 
-//struct SearchView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SearchView()
-//    }
-//}
+struct SearchView_Previews: PreviewProvider {
+    static var previews: some View {
+        ListView()
+    }
+}

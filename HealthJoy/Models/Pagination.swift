@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Pagination: Decodable {
+    var total_count: Int?
+    var count: Int?
+    var offset: Int?
+}

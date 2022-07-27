@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct User: Decodable {
+    var avatar_url: String?
+    var username: String?
+    var display_name: String?
+    
+    var compUserName: String? {
+        return username != nil ? "@\(username!)" : "anonymous user"
+    }
+}

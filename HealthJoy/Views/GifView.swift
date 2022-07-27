@@ -10,7 +10,6 @@ import WebKit
 
 struct GifView: UIViewRepresentable {
     
-    //let urlString = "https://giphy.com/embed/3o6ZtjUZAD5Lf0QFLW"
     let urlString: String?
     
     func makeUIView(context: Context) -> some WKWebView {

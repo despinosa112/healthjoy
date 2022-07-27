@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ActivityIndicatorView: View {
+    
+    @State private var isLoading = true
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Spacer()
+            ActivityIndicator(isAnimating: $isLoading, style: .medium)
+            Spacer()
+        }
     }
 }
 

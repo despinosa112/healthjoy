@@ -11,15 +11,16 @@ import Alamofire
 class GifData: ObservableObject {
     
     @Published var gifs = [Gif]()
-    @Published var apiKey = "3SgxX2uiAckjlxRvZ3FbEpC144ZS5vEf"
+    
+    var apiKey = ""
     
     // Tells if all records have been loaded. (Used to hide/show activity spinner)
     var listFull = false
     
-    // Tracks last page loaded. Used to load next page (current + 1)
+    // Tracks last page loaded.
     var currentPage = 0
     
-    // Limit of records per page. (Only if backend supports, it usually does)
+    // Limit of records per page.
     let perPage = 25
     
     var totalCount = 0
@@ -28,27 +29,27 @@ class GifData: ObservableObject {
     
     
     func searchGifs(query: String){
-        resetPaginationDataIfNeccessary(query: query)
+        resetPaginationDataIfNewQuery(query: query)
         let urlString = "https://api.giphy.com/v1/gifs/search"
         let parameters = ["api_key": apiKey, "q": query, "limit": "\(perPage)", "lang": "en", "offset": "\(currentPage)"]
-        print("-de-searchGifs query=\(query) params=\(parameters)")
-
         AF.request(urlString, method: .get, parameters: parameters).responseDecodable(of: GiphyResponse.self) { response in
             guard let giphyResponse = response.value else { return }
             guard let gifs = giphyResponse.data else { return }
             self.currentPage += 1
-            self.gifs.append(contentsOf: gifs)
-            
-            if let totalCount = giphyResponse.pagination?.total_count {
-                self.totalCount = totalCount
-                self.listFull = (gifs.count < totalCount) ? false : true
-            }
+            self.addOnlyNewGifs(gifs: gifs)
+            self.determineIfListIsFull(giphyResponse: giphyResponse)
         }
     }
     
-    private func resetPaginationDataIfNeccessary(query: String){
+    private func determineIfListIsFull(giphyResponse: GiphyResponse){
+        if let totalCount = giphyResponse.pagination?.total_count {
+            self.totalCount = totalCount
+            self.listFull = (gifs.count < totalCount) ? false : true
+        }
+    }
+    
+    private func resetPaginationDataIfNewQuery(query: String){
         if (query != currentQuery){
-            print("-de-resetPaginationData")
             self.gifs = [Gif]()
             self.currentQuery = query
             self.totalCount = 0
@@ -57,19 +58,13 @@ class GifData: ObservableObject {
         }
     }
     
+    //Avoids Adding duplicate gifs to gifs
+    private func addOnlyNewGifs(gifs: [Gif]){
+        gifs.forEach { gif in
+            if (!self.gifs.contains(gif)){
+                self.gifs.append(gif)
+            }
+        }
+    }
     
-    ///OLD
-//    static func search(query: String, apiKey: String, completion: @escaping ([Gif]) -> ()){
-//        let urlString = "https://api.giphy.com/v1/gifs/search"
-//        let parameters = ["api_key": apiKey, "q": query, "limit": "10", "lang": "en"]
-//        AF.request(urlString, method: .get, parameters: parameters).responseDecodable(of: GiphyResponse.self) { response in
-//            guard let giphyResponse = response.value else { return }
-//            guard let gifs = giphyResponse.data else { return }
-//            completion(gifs)
-//        }
-//    }
-        
-        
-    
-
 }

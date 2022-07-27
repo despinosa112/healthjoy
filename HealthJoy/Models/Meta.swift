@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Meta: Decodable {
+    var status: Int?
+    var msg: String?
+    var response_id: String
+}

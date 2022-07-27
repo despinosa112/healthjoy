@@ -7,21 +7,33 @@
 
 import SwiftUI
 
-struct GifView: View {
+struct GifContainerView: View {
     
-    var gif: Gif
+    @State var gif: Gif
     
     var body: some View {
-        Text(gif.title ?? "TITLE")
+        HStack {
+            Spacer()
+            VStack {
+                UserNameView(gif: gif)
+                    .padding()
+                GifView(urlString: gif.embed_url)
+                    .frame(minWidth: UIScreen.main.bounds.width * 0.8, maxWidth: UIScreen.main.bounds.width * 0.8, minHeight: 250, maxHeight: 400, alignment: .center)
+                Text(gif.title ?? "Gif Description")
+
+            }
+            Spacer()
+        }
+        .padding(0)
     }
+
 }
 
-struct GifView_Previews: PreviewProvider {
+struct GifContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        let gif = Gif(type: "gif", id: "3o6ZtjUZAD5Lf0QFLW", url: "https://giphy.com/gifs/hollywoodsuite-waynes-world-3o6ZtjUZAD5Lf0QFLW", slug: "hollywoodsuite-waynes-world-3o6ZtjUZAD5Lf0QFLW", bitly_gif_url: "http://gph.is/29BHcAR", username: "hollywoodsuite", source: "", title: "Bohemian Rhapsody Car GIF by Hollywood Suite")
-        GifView(gif: gif)
+        
+        let user = User(avatar_url: "https://media1.giphy.com/avatars/hollywoodsuite/hd5dYopxgkYr.jpg", username: "hollywoodsuite")
+        let gif = Gif(type: "gif", id: "3o6ZtjUZAD5Lf0QFLW", url: "https://giphy.com/gifs/hollywoodsuite-waynes-world-3o6ZtjUZAD5Lf0QFLW", slug: "hollywoodsuite-waynes-world-3o6ZtjUZAD5Lf0QFLW", bitly_gif_url: "http://gph.is/29BHcAR", username: "hollywoodsuite", source: "", title: "Bohemian Rhapsody Car GIF by Hollywood Suite", user: user)
+        GifContainerView(gif: gif)
     }
 }
-
-//user avatar, user name, user description,
-//image (you could use Instagram post structure as a reference)

@@ -7,18 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74316ECBA8F727C803F94B76 /* Pods_HealthJoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97B9CD7A8722DE0983D156D /* Pods_HealthJoy.framework */; };
 		E82EE8382888B8BE00DAC3CF /* HealthJoyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82EE8372888B8BE00DAC3CF /* HealthJoyApp.swift */; };
 		E82EE83A2888B8BE00DAC3CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82EE8392888B8BE00DAC3CF /* ContentView.swift */; };
 		E82EE83C2888B8C000DAC3CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E82EE83B2888B8C000DAC3CF /* Assets.xcassets */; };
 		E82EE83F2888B8C000DAC3CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E82EE83E2888B8C000DAC3CF /* Preview Assets.xcassets */; };
+		E89ADC522888C38C003C662E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADC512888C38C003C662E /* ListView.swift */; };
+		E89ADC542888C8E6003C662E /* GifData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADC532888C8E6003C662E /* GifData.swift */; };
+		E89ADC562888CFEE003C662E /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADC552888CFEE003C662E /* Gif.swift */; };
+		E89ADC592888D66E003C662E /* GiphyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADC582888D66E003C662E /* GiphyResponse.swift */; };
+		E89ADC5B2888D6DC003C662E /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADC5A2888D6DC003C662E /* Pagination.swift */; };
+		E89ADC5D2888D73E003C662E /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADC5C2888D73E003C662E /* Meta.swift */; };
+		E89ADC5F2888E070003C662E /* GifContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADC5E2888E070003C662E /* GifContainerView.swift */; };
+		E89ADC622888E5EB003C662E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADC612888E5EB003C662E /* User.swift */; };
+		E89ADC6A288A2B02003C662E /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADC69288A2B02003C662E /* GifView.swift */; };
+		E89ADC6C288B5402003C662E /* UserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADC6B288B5402003C662E /* UserNameView.swift */; };
+		E89ADC6E288B72EB003C662E /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADC6D288B72EB003C662E /* ActivityIndicator.swift */; };
+		E89ADC70288C5683003C662E /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADC6F288C5683003C662E /* ActivityIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		583E120C7E6C923AECA6E7BC /* Pods-HealthJoy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthJoy.release.xcconfig"; path = "Target Support Files/Pods-HealthJoy/Pods-HealthJoy.release.xcconfig"; sourceTree = "<group>"; };
+		9A8689830135150F42AD5F24 /* Pods-HealthJoy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthJoy.debug.xcconfig"; path = "Target Support Files/Pods-HealthJoy/Pods-HealthJoy.debug.xcconfig"; sourceTree = "<group>"; };
 		E82EE8342888B8BE00DAC3CF /* HealthJoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthJoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82EE8372888B8BE00DAC3CF /* HealthJoyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthJoyApp.swift; sourceTree = "<group>"; };
 		E82EE8392888B8BE00DAC3CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E82EE83B2888B8C000DAC3CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E82EE83E2888B8C000DAC3CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E89ADC512888C38C003C662E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		E89ADC532888C8E6003C662E /* GifData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifData.swift; sourceTree = "<group>"; };
+		E89ADC552888CFEE003C662E /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		E89ADC582888D66E003C662E /* GiphyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyResponse.swift; sourceTree = "<group>"; };
+		E89ADC5A2888D6DC003C662E /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		E89ADC5C2888D73E003C662E /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		E89ADC5E2888E070003C662E /* GifContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifContainerView.swift; sourceTree = "<group>"; };
+		E89ADC612888E5EB003C662E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E89ADC68288A1A82003C662E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E89ADC69288A2B02003C662E /* GifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
+		E89ADC6B288B5402003C662E /* UserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameView.swift; sourceTree = "<group>"; };
+		E89ADC6D288B72EB003C662E /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		E89ADC6F288C5683003C662E /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		E97B9CD7A8722DE0983D156D /* Pods_HealthJoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthJoy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74316ECBA8F727C803F94B76 /* Pods_HealthJoy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13319FDECBF55D8E544E9085 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A8689830135150F42AD5F24 /* Pods-HealthJoy.debug.xcconfig */,
+				583E120C7E6C923AECA6E7BC /* Pods-HealthJoy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA143F9DE25455FAA5320C47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E97B9CD7A8722DE0983D156D /* Pods_HealthJoy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E82EE82B2888B8BE00DAC3CF = {
 			isa = PBXGroup;
 			children = (
 				E82EE8362888B8BE00DAC3CF /* HealthJoy */,
 				E82EE8352888B8BE00DAC3CF /* Products */,
+				13319FDECBF55D8E544E9085 /* Pods */,
+				BA143F9DE25455FAA5320C47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +100,11 @@
 		E82EE8362888B8BE00DAC3CF /* HealthJoy */ = {
 			isa = PBXGroup;
 			children = (
+				E89ADC68288A1A82003C662E /* Info.plist */,
 				E82EE8372888B8BE00DAC3CF /* HealthJoyApp.swift */,
-				E82EE8392888B8BE00DAC3CF /* ContentView.swift */,
+				E89ADC532888C8E6003C662E /* GifData.swift */,
+				E89ADC572888CFF5003C662E /* Models */,
+				E89ADC502888C2D9003C662E /* Views */,
 				E82EE83B2888B8C000DAC3CF /* Assets.xcassets */,
 				E82EE83D2888B8C000DAC3CF /* Preview Content */,
 			);
@@ -67,6 +119,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E89ADC502888C2D9003C662E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E82EE8392888B8BE00DAC3CF /* ContentView.swift */,
+				E89ADC512888C38C003C662E /* ListView.swift */,
+				E89ADC5E2888E070003C662E /* GifContainerView.swift */,
+				E89ADC69288A2B02003C662E /* GifView.swift */,
+				E89ADC6B288B5402003C662E /* UserNameView.swift */,
+				E89ADC6D288B72EB003C662E /* ActivityIndicator.swift */,
+				E89ADC6F288C5683003C662E /* ActivityIndicatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E89ADC572888CFF5003C662E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E89ADC552888CFEE003C662E /* Gif.swift */,
+				E89ADC612888E5EB003C662E /* User.swift */,
+				E89ADC582888D66E003C662E /* GiphyResponse.swift */,
+				E89ADC5A2888D6DC003C662E /* Pagination.swift */,
+				E89ADC5C2888D73E003C662E /* Meta.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E82EE8422888B8C000DAC3CF /* Build configuration list for PBXNativeTarget "HealthJoy" */;
 			buildPhases = (
+				57DC2887F3BC4647599E89D1 /* [CP] Check Pods Manifest.lock */,
 				E82EE8302888B8BE00DAC3CF /* Sources */,
 				E82EE8312888B8BE00DAC3CF /* Frameworks */,
 				E82EE8322888B8BE00DAC3CF /* Resources */,
+				EF6236EF4C1D02325995AB71 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +212,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57DC2887F3BC4647599E89D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthJoy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF6236EF4C1D02325995AB71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthJoy/Pods-HealthJoy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthJoy/Pods-HealthJoy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthJoy/Pods-HealthJoy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E82EE8302888B8BE00DAC3CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E89ADC6C288B5402003C662E /* UserNameView.swift in Sources */,
+				E89ADC6A288A2B02003C662E /* GifView.swift in Sources */,
 				E82EE83A2888B8BE00DAC3CF /* ContentView.swift in Sources */,
+				E89ADC5F2888E070003C662E /* GifContainerView.swift in Sources */,
+				E89ADC6E288B72EB003C662E /* ActivityIndicator.swift in Sources */,
+				E89ADC542888C8E6003C662E /* GifData.swift in Sources */,
+				E89ADC592888D66E003C662E /* GiphyResponse.swift in Sources */,
+				E89ADC5B2888D6DC003C662E /* Pagination.swift in Sources */,
+				E89ADC5D2888D73E003C662E /* Meta.swift in Sources */,
+				E89ADC522888C38C003C662E /* ListView.swift in Sources */,
 				E82EE8382888B8BE00DAC3CF /* HealthJoyApp.swift in Sources */,
+				E89ADC622888E5EB003C662E /* User.swift in Sources */,
+				E89ADC562888CFEE003C662E /* Gif.swift in Sources */,
+				E89ADC70288C5683003C662E /* ActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -263,6 +397,7 @@
 		};
 		E82EE8432888B8C000DAC3CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8689830135150F42AD5F24 /* Pods-HealthJoy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -272,6 +407,7 @@
 				DEVELOPMENT_TEAM = AEBND82R4N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthJoy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,6 +429,7 @@
 		};
 		E82EE8442888B8C000DAC3CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 583E120C7E6C923AECA6E7BC /* Pods-HealthJoy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +439,7 @@
 				DEVELOPMENT_TEAM = AEBND82R4N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthJoy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

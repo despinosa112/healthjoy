@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct GiphyResponse: Decodable {
+    var data: [Gif]?
+    var pagination: Pagination?
+    var meta: Meta?
+}
